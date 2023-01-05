@@ -200,6 +200,24 @@ footer .wrapper .alignwide {
     padding: 25px;
   }
 }
+main article .alignwide.wp-block-eedee-block-gutenslider,
+main .wrapper .alignwide.wp-block-eedee-block-gutenslider,
+header article .alignwide.wp-block-eedee-block-gutenslider,
+header .wrapper .alignwide.wp-block-eedee-block-gutenslider,
+footer article .alignwide.wp-block-eedee-block-gutenslider,
+footer .wrapper .alignwide.wp-block-eedee-block-gutenslider {
+  padding: 50px 0;
+}
+@media (max-width: 1920px) {
+  main article .alignwide.wp-block-eedee-block-gutenslider,
+main .wrapper .alignwide.wp-block-eedee-block-gutenslider,
+header article .alignwide.wp-block-eedee-block-gutenslider,
+header .wrapper .alignwide.wp-block-eedee-block-gutenslider,
+footer article .alignwide.wp-block-eedee-block-gutenslider,
+footer .wrapper .alignwide.wp-block-eedee-block-gutenslider {
+    padding: 50px;
+  }
+}
 main article,
 header article,
 footer article {

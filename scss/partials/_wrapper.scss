@@ -48,6 +48,15 @@ footer {
             @media(max-width: 960px) {
                 padding: calc($block_padding / 4);
             }
+
+            // Extras
+            &.wp-block-eedee-block-gutenslider {
+                padding: calc($block_padding / 2) 0;
+
+                @media(max-width: $align-wide-width) {
+                    padding: calc($block_padding / 2);
+                }
+            }
         }
     }
 
