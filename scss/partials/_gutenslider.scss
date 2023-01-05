@@ -1,0 +1,11 @@
+.slide-content {
+    width: 800px!important;
+    margin-left: 100px!important;
+    justify-content: center!important;
+    align-items: flex-start!important;
+
+    @media(max-width: 960px) {
+        width: 80%!important;
+        margin-left: 10%!important;
+    }
+}

@@ -1,0 +1,40 @@
+.wp-block-buttons {
+    margin-top: calc($block_padding / 2);
+
+    @media(max-width: 960px) {
+        margin-top: calc($block_padding / 4);
+    }
+
+    .wp-block-button {
+
+        a {
+            font-weight: 700;
+        }
+
+        &.is-style-outline {
+
+            a {
+                font-weight: 700;
+            }
+        }
+
+        .wp-block-button__link {
+            font-family: $primary-font;
+            border-radius: 0;
+            transition: all ease 250ms;
+
+            &.has-background {
+                &:hover {
+                    // 
+                }
+            }
+
+            &.has-text-color {
+                &:hover {
+                    // 
+                }
+            }
+
+        }
+    }
+}

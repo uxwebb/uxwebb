@@ -1,0 +1,101 @@
+$primary-font: 'Space Grotesk', sans-serif;
+$fluid-text-ratio: 4vw;
+
+// // // // // // // // // // // // // // // // // // 
+// Heading 1
+@mixin h1 {
+    font-family: $primary-font;
+    font-size: clamp(34px, $fluid-text-ratio, 86px);
+    line-height: 130%;
+}
+h1 {
+    @include h1;
+}
+
+// // // // // // // // // // // // // // // // // // 
+// Heading 2
+@mixin h2 {
+    font-family: $primary-font;
+    font-size: clamp(26px, $fluid-text-ratio, 46px);
+    line-height: 130%;
+}
+h2 {
+    @include h2;
+}
+
+// // // // // // // // // // // // // // // // // // 
+// Heading 3
+@mixin h3 {
+    font-family: $primary-font;
+    font-size: clamp(24px, $fluid-text-ratio, 36px);
+    line-height: 130%;
+}
+h3 {
+    @include h3;
+}
+
+// // // // // // // // // // // // // // // // // // 
+// Heading 4
+@mixin h4 {
+    font-family: $primary-font;
+    font-size: clamp(20px, $fluid-text-ratio, 26px);
+    line-height: 130%;
+}
+h4 {
+    @include h4;
+}
+
+// // // // // // // // // // // // // // // // // // 
+// Heading 5
+@mixin h5 {
+    font-family: $primary-font;
+    font-size: clamp(16px, $fluid-text-ratio, 20px);
+    line-height: 150%;
+}
+h5 {
+    @include h5;
+}
+
+// // // // // // // // // // // // // // // // // // 
+// Heading 6
+@mixin h6 {
+    font-family: $primary-font;
+    font-size: clamp(12px, $fluid-text-ratio, 16px);
+    line-height: 150%;
+}
+h6 {
+    @include h6;
+}
+
+// // // // // // // // // // // // // // // // // // 
+// Paragraf
+@mixin p {
+    font-family: $primary-font;
+    font-size: clamp(16px, $fluid-text-ratio, 18px);
+    line-height: 150%;
+}
+p {
+    @include p;
+}
+
+// // // // // // // // // // // // // // // // // // 
+// Logo brand
+@mixin logo {
+    @include h5;
+    font-weight: 700;
+}
+.logo {
+    @include logo;
+}
+
+// // // // // // // // // // // // // // // // // // 
+// WP Links, page items
+@mixin page_item {
+    font-family: $primary-font;
+    font-size: clamp(16px, $fluid-text-ratio, 18px);
+    line-height: 100%;
+    font-weight: 700;
+}
+.page_item {
+    @include page_item;
+}

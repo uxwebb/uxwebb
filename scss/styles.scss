@@ -1,0 +1,14 @@
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/general";
+@import "partials/theme-colors";
+@import "partials/buttons";
+@import "partials/wrapper";
+
+// Gutenberg blocks overrides
+@import "partials/wp-block-cover";
+@import "partials/wp-block-columns";
+@import "partials/wp-block-media-text";
+@import "partials/gutenslider";
+
+@import "partials/header";

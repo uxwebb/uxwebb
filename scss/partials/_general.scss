@@ -1,0 +1,78 @@
+$mobile-width: 600px;
+
+* {
+    //background-color: rgba(blue, 0.05);
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+Typographic tweaks!
+4. Add accessible line-height
+5. Improve text rendering
+*/
+body {
+    -webkit-font-smoothing: antialiased;
+    background: $white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/*
+6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+
+/*
+8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+// Remove padding from .wp-block-media-text__content on mobile
+@media(max-width: $mobile-width)  {
+    .wp-block-media-text__content {
+        padding: 0!important;
+        margin-top: $sm-margin;
+    }
+}
+  
+.editor-post-title {
+    text-align: center;
+    padding: 0.2em 0;
+    background: black;
+    color: white;
+    width: 100%;
+}
+
+.wp-block-spacer {
+    @media(max-width: 960px) {
+        height: 50px!important;
+    }
+}
+
+* {
+    // background: rgba(rgb(115, 0, 255), 0.1);
+}
