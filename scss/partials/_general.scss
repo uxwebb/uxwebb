@@ -4,6 +4,10 @@ $mobile-width: 600px;
     //background-color: rgba(blue, 0.05);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -55,7 +59,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media(max-width: $mobile-width)  {
     .wp-block-media-text__content {
         padding: 0!important;
-        margin-top: $sm-margin;
+        // margin-top: $sm-margin;
     }
 }
   

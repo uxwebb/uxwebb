@@ -6,6 +6,7 @@
     }
 
     .wp-block-button {
+        background: none;
 
         a {
             font-weight: 700;
@@ -23,18 +24,17 @@
             border-radius: 0;
             transition: all ease 250ms;
 
-            &.has-background {
-                &:hover {
-                    // 
-                }
-            }
+            // &.has-background {
+            //     &:hover {
+            //         // 
+            //     }
+            // }
 
-            &.has-text-color {
-                &:hover {
-                    // 
-                }
-            }
-
+            // &.has-text-color {
+            //     &:hover {
+            //         // 
+            //     }
+            // }
         }
     }
 }

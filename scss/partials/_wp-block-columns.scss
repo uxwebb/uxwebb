@@ -1,5 +1,13 @@
 .wp-block-columns {
     margin-bottom: 0;
-    @include block_padding;
-    // padding-bottom: 0;
+    //@include block_padding;
+    padding-bottom: 0;
+    
+    .wp-block-column {
+        padding-bottom: 30px;
+
+        h3, h4, h5, h6, p, .wp-block-buttons {
+            padding: 0 30px;
+        }
+    }
 }

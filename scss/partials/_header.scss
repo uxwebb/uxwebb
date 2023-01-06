@@ -1,14 +1,11 @@
-$header_height_desktop: 100px;
-$header_height_mobile: 50px;
-
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: $header_height_desktop;
     background: $white;
     z-index: 999;
-    border-bottom: 1px solid $dark;
 
     @media(max-width: 768px) {
         height: $header_height_mobile;

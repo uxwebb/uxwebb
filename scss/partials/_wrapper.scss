@@ -1,6 +1,6 @@
 * {
-    // background: rgba(black, 0.05);
-    // box-shadow: 0 0 0 1px black;
+    //background: rgba(black, 0.05);
+    // box-shadow: 0 0 0 1px red;
     margin: 0;
     padding: 0;
 }
@@ -10,10 +10,14 @@ $align-wide-width-laptop: 1440px;
 $align-wide-width-laptop-sm: 1280px;
 $align-wide-width-tablet-1: 1024px;
 $align-wide-width-tablet-2: 960px;
-$width: 1000px;
+$width: 800px;
 
 $align-wide-width__desktop: calc($align-wide-width - $width);
 $align-wide-width__desktop-margin: calc($align-wide-width__desktop / 2);
+
+main {
+    margin: $header_height_desktop 0;
+}
 
 main,
 header,
@@ -23,7 +27,11 @@ footer {
     .wrapper {
         max-width: 100vw;
         width: $width;
-        margin: 0 auto 0 auto;
+        margin: 0 auto;
+
+        @media(max-width: $width) {
+            padding: 0 25px;
+        }
     
         .alignfull {
             margin: 0 calc(50% - 50vw);
@@ -42,11 +50,12 @@ footer {
                 margin: 0 calc(50% - 50vw);
                 max-width: 100vw;
                 width: 100vw;
-                padding: $block_padding;
+                // padding: $block_padding;
             }
 
             @media(max-width: 960px) {
-                padding: calc($block_padding / 4);
+                // padding: calc($block_padding / 4);
+                padding: 0;
             }
 
             // Extras

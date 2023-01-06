@@ -1,6 +1,18 @@
 $primary-font: 'Space Grotesk', sans-serif;
 $fluid-text-ratio: 4vw;
 
+// Lists
+article {
+    ul {
+        margin-left: 24px;
+        li {
+            font-family: $primary-font;
+            font-size: clamp(16px, $fluid-text-ratio, 18px);
+            line-height: 150%;
+        }
+    }
+}
+
 // // // // // // // // // // // // // // // // // // 
 // Heading 1
 @mixin h1 {

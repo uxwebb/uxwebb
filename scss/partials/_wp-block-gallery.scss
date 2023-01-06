@@ -1,0 +1,13 @@
+$gap: 50px;
+
+.wp-block-gallery {
+    gap: $gap!important;
+    
+    figure {
+        width: calc(50% - $gap * 2)!important;
+
+        @media(max-width: 600px) {
+            width: 100%!important;
+        }
+    }
+}
