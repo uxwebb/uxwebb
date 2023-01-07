@@ -8,22 +8,14 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> >
-<header>
-    <div class="wrapper">
-        <div class="alignwide">
-            <a href="/" class="logo"><?php echo get_bloginfo(); ?></a>
-            <!-- <a class="logo-byn" href="/">
-                <img src="<?php bloginfo('template_url'); ?>/images/BYN.webp" alt="byn logo">
-            </a> -->
+<?php
+    if ( is_page( 'jonkopings-halkbana' ) ) {
+        get_template_part( './headers/header__jonkopinghalkbana' );
+    
+    } elseif ( is_page( 'wetterpool' ) ) {
+        get_template_part( './headers/header__wetterpool' );
 
-            <nav class="main-navigation">
-                <div class="burger-wrapper">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                <?php wp_nav_menu(); ?>
-            </nav>
-        </div>
-    </div>
-</header>
+    } else {
+        get_template_part( './headers/header__default' );
+    }
+?>

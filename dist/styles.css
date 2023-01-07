@@ -79,10 +79,6 @@ p {
   font-weight: 700;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -578,6 +574,11 @@ header .wrapper .alignwide .main-navigation .menu ul li.current_page_item a {
   header .wrapper .alignwide .main-navigation .menu ul li.current_page_item a {
     color: #3434B3;
   }
+}
+
+footer {
+  background: lightseagreen;
+  min-height: 50vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
