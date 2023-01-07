@@ -1,4 +1,4 @@
-<header id="header__jonkopinghalkbana">
+<header id="header__default">
     <div class="wrapper">
         <div class="alignwide">
             <a href="/" class="logo">Default</a>
