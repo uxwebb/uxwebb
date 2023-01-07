@@ -283,6 +283,11 @@ footer article {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+@media (max-width: 1920px) {
+  .wp-block-columns.alignwide {
+    padding: 0 50px;
+  }
+}
 .wp-block-columns .wp-block-column {
   padding-bottom: 30px;
 }
