@@ -14,6 +14,9 @@
     
     } elseif ( is_page( 'wetterpool' ) ) {
         get_template_part( './headers/header__wetterpool' );
+    
+    } elseif ( is_page( 'gula-hunden' ) ) {
+        get_template_part( './headers/header__gulahunden' );
 
     } else {
         get_template_part( './headers/header__default' );
