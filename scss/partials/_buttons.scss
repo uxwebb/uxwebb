@@ -7,15 +7,45 @@
 
     .wp-block-button {
         background: none;
+        transition: all ease 250ms;
 
         a {
             font-weight: 700;
         }
 
-        &.is-style-outline {
+        &.is-style-fill {
 
-            a {
-                font-weight: 700;
+            .wp-block-button__link {
+                position: relative;
+                z-index: 1;
+
+
+                // Purple
+                &.has-purple-background-color {
+
+                    &:hover {
+                        background: lighten($purple, 7.5%);
+                    }
+                }
+
+                // Yellow
+                &.has-yellow-background-color {
+                    // background: $yellow;
+                    // position: relative;
+                    // z-index: 1;
+
+                    &:hover {
+                        background: lighten($yellow, 7.5%);
+                    }
+                }
+            }
+        }
+
+        &.is-style-outline {
+            &:hover {
+                background: currentColor;
+                border-top-left-radius: 10px;
+                border-bottom-right-radius: 10px;
             }
         }
 
@@ -23,18 +53,6 @@
             font-family: $primary-font;
             border-radius: 0;
             transition: all ease 250ms;
-
-            // &.has-background {
-            //     &:hover {
-            //         // 
-            //     }
-            // }
-
-            // &.has-text-color {
-            //     &:hover {
-            //         // 
-            //     }
-            // }
         }
     }
 }

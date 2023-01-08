@@ -156,12 +156,25 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .wp-block-buttons .wp-block-button {
   background: none;
+  transition: all ease 250ms;
 }
 .wp-block-buttons .wp-block-button a {
   font-weight: 700;
 }
-.wp-block-buttons .wp-block-button.is-style-outline a {
-  font-weight: 700;
+.wp-block-buttons .wp-block-button.is-style-fill .wp-block-button__link {
+  position: relative;
+  z-index: 1;
+}
+.wp-block-buttons .wp-block-button.is-style-fill .wp-block-button__link.has-purple-background-color:hover {
+  background: #4444c9;
+}
+.wp-block-buttons .wp-block-button.is-style-fill .wp-block-button__link.has-yellow-background-color:hover {
+  background: #ffefa4;
+}
+.wp-block-buttons .wp-block-button.is-style-outline:hover {
+  background: currentColor;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .wp-block-buttons .wp-block-button .wp-block-button__link {
   font-family: "Space Grotesk", sans-serif;
