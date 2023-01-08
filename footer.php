@@ -9,7 +9,7 @@
         get_template_part( './footers/footer__gulahunden' );
 
     } else {
-        get_template_part( './footers/footer__default' );
+        //get_template_part( './footers/footer__default' );
     }
 ?>
 <?php wp_footer(); ?>
