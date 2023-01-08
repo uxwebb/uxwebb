@@ -16,7 +16,7 @@ $align-wide-width__desktop: calc($align-wide-width - $width);
 $align-wide-width__desktop-margin: calc($align-wide-width__desktop / 2);
 
 main {
-    margin: $header_height_desktop 0;
+    // margin: $header_height_desktop 0;
 }
 
 main,
