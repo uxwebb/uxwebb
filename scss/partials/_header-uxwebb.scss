@@ -1,10 +1,10 @@
-header#uxwebb {
+header#header__uxwebb {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: $header_height_desktop;
-    // background: $white;
+    background: none;
     z-index: 999;
 
     @media(max-width: 768px) {

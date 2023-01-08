@@ -1,4 +1,4 @@
-<header id="header__default">
+<header id="header__uxwebb">
     <div class="wrapper">
         <div class="alignwide">
             <a href="/" class="logo">UX Webb</a>

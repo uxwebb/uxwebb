@@ -1,10 +1,10 @@
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     height: $header_height_desktop;
-    // background: $white;
+    background: $white;
     z-index: 999;
 
     @media(max-width: 768px) {
@@ -33,7 +33,7 @@ header {
 
             .logo {
                 width: 75px;
-                color: #FFF;
+                color: $dark;
                 text-decoration: none;
                 line-height: 100%;
                 margin-bottom: 0;
@@ -157,7 +157,7 @@ header {
 
                             a {
                                 text-decoration: underline;
-                                color: #FFF;
+                                color: $dark;
 
                                 @media(max-width: 960px) {
                                     @include h3;
@@ -168,11 +168,10 @@ header {
                             &.current_page_item {
                                 
                                 a {
-                                    color: #FFF;
-                                    opacity: 0.5;
+                                    color: $purple;
 
                                     @media(max-width: 960px) {
-                                        color: #FFF;
+                                        color: $purple;
                                     }
                                 }
                             }
