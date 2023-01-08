@@ -1,7 +1,7 @@
 <header id="header__default">
     <div class="wrapper">
         <div class="alignwide">
-            <a href="/" class="logo">Default</a>
+            <a href="/" class="logo">UX Webb</a>
             <!-- <a class="logo-byn" href="/">
                 <img src="<?php bloginfo('template_url'); ?>/images/BYN.webp" alt="byn logo">
             </a> -->

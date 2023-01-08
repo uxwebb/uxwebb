@@ -1,8 +1,7 @@
-<footer id="footer__jonkopinghalkbana">
+<footer id="footer__default">
     <div class="wrapper">
         <div class="alignwide">
-            <a href="/" class="logo">Default</a>
-            <?php wp_nav_menu(); ?>
+            footer default
         </div>
     </div>
 </footer>
