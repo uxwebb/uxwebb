@@ -182,6 +182,91 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: all ease 250ms;
 }
 
+body.post-type-archive-project {
+  background: linear-gradient(135deg, #396afc 0%, #2948ff 100%);
+}
+
+main#archive-projects {
+  margin-top: 200px;
+}
+@media (max-width: 768px) {
+  main#archive-projects {
+    margin-top: 50px;
+  }
+}
+main#archive-projects .wrapper .alignwide {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 1920px) {
+  main#archive-projects .wrapper .alignwide {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 960px) {
+  main#archive-projects .wrapper .alignwide {
+    padding: 0 25px;
+  }
+}
+main#archive-projects .wrapper .alignwide .filter-wrapper .filter-button-group {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main#archive-projects .wrapper .alignwide .filter-wrapper .filter-button-group button {
+  width: auto;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(16px, 4vw, 20px);
+  line-height: 150%;
+  margin-bottom: 0.5em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all ease 250ms;
+  cursor: pointer;
+}
+main#archive-projects .wrapper .alignwide .filter-wrapper .filter-button-group button:hover {
+  color: white;
+  box-shadow: 0 1px 0 0 white;
+}
+main#archive-projects .wrapper .alignwide .filter-wrapper .filter-button-group button.is-checked {
+  color: white;
+  box-shadow: 0 1px 0 0 white;
+}
+main#archive-projects .wrapper .alignwide .loop-wrapper {
+  width: calc(100% - 200px);
+}
+
+.loop-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.loop-wrapper .loop-item {
+  width: 25%;
+  padding: 0 1em;
+  text-decoration: none;
+  margin-bottom: 4em;
+}
+@media (max-width: 1024px) {
+  .loop-wrapper .loop-item {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .loop-wrapper .loop-item {
+    width: 100%;
+  }
+}
+.loop-wrapper .loop-item h6 {
+  color: white;
+}
+.loop-wrapper .loop-item h4 {
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;

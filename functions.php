@@ -15,6 +15,7 @@
         wp_enqueue_script ( 'oas_scripts', $path . '/'.$scriptfolder .'/scripts.js',array('jquery'), true);
         wp_enqueue_script ( 'oas_scripts_scrollfade', $path . '/'.$scriptfolder .'/scrollfade.js',array('jquery'), true);
         wp_enqueue_script ( 'oas_scripts_alpine', $path . '/'.$scriptfolder .'/alpine.js',array('jquery'), 'defer', true);
+        wp_enqueue_script ( 'isotope_scripts', $path . '/'.$scriptfolder .'/isotope.min.js',array('jquery'), true);
         wp_localize_script('oas_scripts', 'wpAjax', array('ajaxUrl' => admin_url('admin-ajax.php')));
     }
     add_action('wp_enqueue_scripts', 'oas_scriptsstyles');
@@ -107,3 +108,19 @@
         register_post_type('project', $args); //Create a post type with the slug is ‘product’ and arguments in $args.
     }
     add_action('init', 'prefix_create_custom_post_type');
+
+    function custom_taxonomies() {
+        // Projekt
+        register_taxonomy(
+            'project',
+            'project',
+            array(
+                'hierarchical' => true,
+                'show_in_rest' => true,
+                'show_admin_column' => true,
+                'label' => 'Projekt kategori',
+                'query_var' => true
+            )
+        );
+    }
+    add_action( 'init', 'custom_taxonomies');
