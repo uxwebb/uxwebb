@@ -9,11 +9,11 @@ registerBlockStyle( 'core/media-text' , {
     isDefault: true,
 });
 
-// registerBlockStyle( 'core/cover' , {
-//     name: 'cover-wrapper',
-//     label: __( 'Box style' ),
-//     isDefault: true,
-// });
+registerBlockStyle( 'core/button' , {
+    name: 'primary-button',
+    label: __( 'Primär knapp' ),
+    isDefault: true,
+});
 
 // registerBlockStyle( 'core/group' , {
 //     name: 'marquee-wrapper',

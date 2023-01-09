@@ -157,6 +157,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .wp-block-buttons .wp-block-button {
   background: none;
   transition: all ease 250ms;
+  position: relative;
 }
 .wp-block-buttons .wp-block-button a {
   font-weight: 700;
@@ -175,6 +176,34 @@ p, h1, h2, h3, h4, h5, h6 {
   background: currentColor;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+.wp-block-buttons .wp-block-button.is-style-primary-button {
+  position: relative;
+}
+.wp-block-buttons .wp-block-button.is-style-primary-button a {
+  position: relative;
+  background: white;
+  border-radius: 100px;
+  color: black;
+  transition: all ease 250ms;
+}
+.wp-block-buttons .wp-block-button.is-style-primary-button a:before {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  width: calc(100% + 1em);
+  height: calc(100% + 1em);
+  background: none;
+  border-radius: 100px;
+  border: 2px solid white;
+  transition: all ease 100ms;
+}
+.wp-block-buttons .wp-block-button.is-style-primary-button a:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+.wp-block-buttons .wp-block-button.is-style-primary-button a:hover:before {
+  outline: 2px solid white;
 }
 .wp-block-buttons .wp-block-button .wp-block-button__link {
   font-family: "Space Grotesk", sans-serif;
