@@ -119,7 +119,11 @@
                 'show_in_rest' => true,
                 'show_admin_column' => true,
                 'label' => 'Projekt kategori',
-                'query_var' => true
+                'query_var' => true,
+                'rewrite' => array(
+                    'slug' => 'projekt',
+                    'with_front' => false
+                )
             )
         );
     }
