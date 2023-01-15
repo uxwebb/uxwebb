@@ -4,7 +4,7 @@ header {
     left: 0;
     width: 100%;
     height: $header_height_desktop;
-    background: $white;
+    background: linear-gradient(135deg,rgb(57,106,252) 0%,rgb(41,72,255) 100%)!important;
     z-index: 999;
 
     @media(max-width: 768px) {

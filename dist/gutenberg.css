@@ -450,7 +450,7 @@ header {
   left: 0;
   width: 100%;
   height: 100px;
-  background: #FAFAFA;
+  background: linear-gradient(135deg, #396afc 0%, #2948ff 100%) !important;
   z-index: 999;
 }
 @media (max-width: 768px) {
