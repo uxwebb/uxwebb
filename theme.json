@@ -1,0 +1,84 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "styles": {
+                
+    },
+	"settings": {
+        "appearanceTools": true,
+        "color": {
+            "palette": [
+                {
+                    "slug" : "white",
+                    "color" : "#FAF9F9",
+                    "name" : "Vit"
+                },
+                {
+                    "slug": "lightblue",
+                    "color": "#6FABCD",
+                    "name": "Ljusblå"
+                },
+                {
+                    "slug": "purple",
+                    "color": "#3C397E",
+                    "name": "Lila"
+                },
+                {
+                    "slug": "blue",
+                    "color": "#4A85CA",
+                    "name": "Blå"
+                },
+                {
+                    "slug": "darkpurple",
+                    "color": "#21162B",
+                    "name": "Mörklila"
+                }
+            ]
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "Space Grotesk",
+                    "slug": "space-grotesk",
+                    "name": "Space Grotesk"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "slug": "extra-small",
+                    "size": "1rem",
+                    "name": "Extra liten"
+                },
+                {
+                    "slug": "small",
+                    "size": "1.125rem",
+                    "name": "Liten"
+                },
+                {
+                    "slug": "medium",
+                    "size": "1.25rem",
+                    "name": "Mellanstor"
+                },
+                {
+                    "slug": "large",
+                    "size": "1.5rem",
+                    "name": "Stor"
+                },
+                {
+                    "slug": "extra-large",
+                    "size": "4rem",
+                    "name": "Extra stor"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "400px",
+            "wideSize": "700px"
+        },
+        "spacing": {
+			"padding": true,
+			"margin": true,
+			"units": [ "px", "em", "rem", "vh", "vw", "%" ]
+		}
+	}
+}

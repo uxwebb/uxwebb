@@ -1,9 +1,0 @@
-.wp-block-cover {
-    padding: 100px;
-    min-height: auto;
-    @include block_padding;
-
-    .wp-block-columns {
-        padding: calc($block_padding / 2) 0 0 0;
-    }
-}
