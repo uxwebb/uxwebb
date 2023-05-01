@@ -1,38 +1,15 @@
 {
     "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
-    "styles": {
-                
-    },
-	"settings": {
-        "appearanceTools": true,
+    "settings": {
+        "appearanceTools": false,
         "color": {
             "palette": [
-                {
-                    "slug" : "white",
-                    "color" : "#FAF9F9",
-                    "name" : "Vit"
-                },
-                {
-                    "slug": "lightblue",
-                    "color": "#6FABCD",
-                    "name": "Ljusblå"
-                },
-                {
-                    "slug": "purple",
-                    "color": "#3C397E",
-                    "name": "Lila"
-                },
-                {
-                    "slug": "blue",
-                    "color": "#4A85CA",
-                    "name": "Blå"
-                },
-                {
-                    "slug": "darkpurple",
-                    "color": "#21162B",
-                    "name": "Mörklila"
-                }
+                { "slug": "ux-darkblue", "color": "#1D2F6F", "name": "Mörkblå" },
+                { "slug": "ux-blue", "color": "#8390FA", "name": "Ljusblå" },
+                { "slug": "ux-yellow", "color": "#FAC748", "name": "Gul" },
+                { "slug": "ux-lightpink", "color": "#F9E9EC", "name": "Ljusrosa" },
+                { "slug": "ux-pink", "color": "#F88DAD", "name": "Rosa" }
             ]
         },
         "typography": {
@@ -40,45 +17,95 @@
                 {
                     "fontFamily": "Space Grotesk",
                     "slug": "space-grotesk",
-                    "name": "Space Grotesk"
-                }
-            ],
-            "fontSizes": [
-                {
-                    "slug": "extra-small",
-                    "size": "1rem",
-                    "name": "Extra liten"
-                },
-                {
-                    "slug": "small",
-                    "size": "1.125rem",
-                    "name": "Liten"
-                },
-                {
-                    "slug": "medium",
-                    "size": "1.25rem",
-                    "name": "Mellanstor"
-                },
-                {
-                    "slug": "large",
-                    "size": "1.5rem",
-                    "name": "Stor"
-                },
-                {
-                    "slug": "extra-large",
-                    "size": "4rem",
-                    "name": "Extra stor"
+                    "name": "Space Grotesk",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Space Grotesk",
+                            "fontWeight": "300",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/space-grotesk/SpaceGrotesk-Light.ttf"]
+                        },
+                        {
+                            "fontFamily": "Space Grotesk",
+                            "fontWeight": "500",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/space-grotesk/SpaceGrotesk-Medium.ttf"]
+                        },
+                        {
+                            "fontFamily": "Space Grotesk",
+                            "fontWeight": "700",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/space-grotesk/SpaceGrotesk-Bold.ttf"]
+                        }
+
+                    ]
                 }
             ]
         },
         "layout": {
-            "contentSize": "400px",
-            "wideSize": "700px"
+            "contentSize": "800px",
+            "wideSize": "1440px"
+        }
+    },
+    "styles": {
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+            "lineHeight": "1.75",
+            "fontSize": "1rem",
+            "fontWeight": "300"
         },
-        "spacing": {
-			"padding": true,
-			"margin": true,
-			"units": [ "px", "em", "rem", "vh", "vw", "%" ]
-		}
-	}
+        "elements": {
+            "h1": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+                    "lineHeight": "1.75",
+                    "fontSize": "3rem",
+                    "fontWeight": "700"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+                    "lineHeight": "1.75",
+                    "fontSize": "1.8rem",
+                    "fontWeight": "700"
+                }
+            },
+            "h3": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+                    "lineHeight": "1.75",
+                    "fontSize": "1.6rem",
+                    "fontWeight": "300"
+                }
+            },
+            "h4": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+                    "lineHeight": "1.75",
+                    "fontSize": "1.4rem",
+                    "fontWeight": "300"
+                }
+            },
+            "h5": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+                    "lineHeight": "1.75",
+                    "fontSize": "1.2rem",
+                    "fontWeight": "300"
+                }
+            },
+            "h6": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+                    "lineHeight": "1.75",
+                    "fontSize": "1rem",
+                    "fontWeight": "300"
+                }
+            }
+        }
+    }
 }

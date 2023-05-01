@@ -1,0 +1,119 @@
+$header-height: 70px;
+$header-bg: whitesmoke;
+
+#overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    transition: all ease 250ms;
+    background: rgba(0,0,0,0);
+    pointer-events: none;
+
+
+    &.is-active {
+        background: rgba(0,0,0,0.5);
+        pointer-events: initial;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: $header-height;
+    position: relative;
+    transition: all ease 250ms;
+    background: $header-bg;
+    padding: 0 1em;
+
+    .alignwide {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;    
+        
+        &.is-active {
+            z-index: 3;
+        }
+    
+        .logo {
+            position: relative;
+            z-index: 2;
+            color: black;
+        }
+        
+        nav#main-nav {
+            position: relative;
+            z-index: 2;
+            height: auto;
+            display: flex;
+            transition: all ease 250ms;
+    
+            .menu {
+                display: flex;
+    
+                @media(max-width: 600px) {
+                    position: fixed;
+                    top: $header-height;
+                    left: 0;
+                    width: 100%;
+                    height: auto;
+                    z-index: -1;
+                    background: $header-bg;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2em 0;
+                    opacity: 0;
+                    transition: all ease 250ms;
+                    pointer-events: none;
+                    transform: translateY(-2em);
+    
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+    
+                        li {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+    
+                ul {
+                    display: flex;
+    
+                    li {
+                        list-style: none;
+                        margin-left: 1em;
+                    }
+                }
+            }
+        
+            &.is-active {
+                .menu {
+                    transform: translateY(0);
+                    opacity: 1;
+                    pointer-events: initial;
+    
+                    @media(max-width: 600px) {
+                        opacity: 1;
+                    }
+                }
+            }
+    
+            .toggle {
+                display: none;
+    
+                @media(max-width: 600px) {
+                    display: flex;
+                }
+            }
+        }
+    }
+    
+}
