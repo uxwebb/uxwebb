@@ -56,6 +56,13 @@ img.image-colors {
   box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.15) !important;
 }
 
+@media (max-width: 600px) {
+  .wp-block-cover {
+    min-height: auto !important;
+    padding: 5em 0 !important;
+  }
+}
+
 .wp-block-buttons {
   margin-top: 2em;
 }
