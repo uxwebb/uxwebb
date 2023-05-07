@@ -37,3 +37,25 @@ add_action( 'enqueue_block_editor_assets', 'be_gutenberg_scripts' );
 add_theme_support( 'align-wide' );
 
 add_theme_support( 'post-thumbnails' );
+
+/*==============================================================================
+# Custom ACF Blocks
+==============================================================================*/
+add_action( 'init', 'register_acf_blocks' );
+
+function register_acf_blocks() {
+    register_block_type( 
+      __DIR__ . '/acf-blocks/relationship',
+      array (
+        'supports' => array(
+          'align' => array( 
+            'left',
+            'right',
+            'center',
+            'wide',
+            'full'
+          ),
+        ),
+      )
+    );
+}

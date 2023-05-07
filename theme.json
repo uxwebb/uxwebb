@@ -9,7 +9,9 @@
                 { "slug": "ux-light-green", "color": "#A3B18A", "name": "Ljusblå" },
                 { "slug": "ux-green", "color": "#588157", "name": "Grön" },
                 { "slug": "ux-darkgreen", "color": "#3A5A40", "name": "Mörkgrön" },
-                { "slug": "ux-dark-gray", "color": "#434343", "name": "Mörkgrå" }
+                { "slug": "ux-dark-gray", "color": "#434343", "name": "Mörkgrå" },
+                { "slug": "ux-primary", "color": "#988AB1", "name": "Primär" },
+                { "slug": "ux-secondary", "color": "#5A3A54", "name": "Sekundär" }
             ]
         },
         "typography": {
@@ -41,6 +43,20 @@
                             "src": ["file:./assets/fonts/space-grotesk/SpaceGrotesk-Bold.ttf"]
                         }
 
+                    ]
+                },
+                {
+                    "fontFamily": "Inter",
+                    "slug": "inter",
+                    "name": "Inter",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Inter",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/inter/inter-400.ttf"]
+                        }
                     ]
                 }
             ]
@@ -116,6 +132,20 @@
                     "lineHeight": "1.75",
                     "fontSize": "var(--wp--custom--typography--font-size--heading-6)",
                     "fontWeight": "300"
+                }
+            },
+            "button": {
+                "typography": {
+                    "fontWeight": "500"
+                }
+            },
+            "link": {
+                "typography": {
+                    "fontWeight": "500",
+                    "textDecoration": "underline"
+                },
+                "color": {
+                    "text": "var(--wp--preset--color--ux-darkgreen)"
                 }
             }
         }

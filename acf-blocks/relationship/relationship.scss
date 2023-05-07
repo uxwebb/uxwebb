@@ -1,0 +1,25 @@
+.relationship-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+
+    .relation-item {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 6px;
+        text-decoration-color: rgba(#3A5A40, 0.5);
+        transition: all ease 250ms;
+
+        &:hover {
+            text-decoration-color: rgba(#3A5A40, 1);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            aspect-ratio: 6/4;
+        }
+    }
+}
