@@ -40,7 +40,11 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;    
+        width: 100%;
+        
+        @media(max-width: 1440px) {
+            margin: 0 1em;
+        }
         
         &.is-active {
             z-index: 3;

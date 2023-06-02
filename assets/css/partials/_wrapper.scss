@@ -1,8 +1,27 @@
 $wideSize: var(--wp--style--global--wide-size);
 $contentSize: var(--wp--style--global--content-size);
-$margin-sm: 2em;
-$margin-md: 4em;
-$margin-lg: 6em;
+$margin-sm: 1em;
+$margin-md: 2em;
+$margin-lg: 4em;
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+
+    article {
+        width: calc(100% - 8em);
+        margin: 0 4em;
+
+        @media(max-width: 1024px) {
+            width: calc(100% - 2em);
+            margin: 0 1em;
+        }
+    }
+}
+
 
 .alignfull {
     max-width: 100%;
@@ -13,8 +32,8 @@ $margin-lg: 6em;
     margin: 0 auto;
 
     @media(max-width: 1440px) {
-        margin-left: $margin-sm;
-        margin-right: $margin-sm;
+        // margin-left: $margin-sm;
+        // margin-right: $margin-sm;
     }
 }
 
