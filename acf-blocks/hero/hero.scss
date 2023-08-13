@@ -1,0 +1,115 @@
+@keyframes sliding {
+    0% {
+        clip-path: polygon(65% 0, 100% 0, 100% 100%, 45% 100%);
+    }
+    10% {
+        clip-path: polygon(65% 0, 100% 0, 100% 100%, 45% 100%);
+    }
+    20% {
+        clip-path: polygon(65% 0, 100% 0, 100% 100%, 45% 100%);
+    }
+    33% {
+        clip-path: polygon(85% 0, 100% 0, 100% 100%, 65% 100%);
+    }
+    50% {
+        clip-path: polygon(85% 0, 100% 0, 100% 100%, 65% 100%);
+    }
+    66% {
+        clip-path: polygon(85% 0, 100% 0, 100% 100%, 65% 100%);
+    }
+    80% {
+        clip-path: polygon(85% 0, 100% 0, 100% 100%, 65% 100%);
+    }
+    90% {
+        clip-path: polygon(85% 0, 100% 0, 100% 100%, 65% 100%);
+    }
+    100% {
+        clip-path: polygon(65% 0, 100% 0, 100% 100%, 45% 100%);
+    }
+}
+
+@keyframes slidingText {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-15%);
+    }
+    50% {
+        transform: translateX(-20%);
+    }
+    80% {
+        transform: translateX(-15%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.hero-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 100px);
+    width: 100%;
+    margin: auto;
+    max-width: var(--wp--style--global--content-size);
+
+    &.full {
+        max-width: 100%;
+    }
+
+    &.wide {
+        max-width: var(--wp--style--global--wide-size);
+    }
+
+    .item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all ease 500ms;
+        display: flex;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            &.image-2 {
+                // 
+            }
+        }
+
+        .meta {
+            position: absolute;
+            width: auto;
+            height: auto;
+            display: flex;
+            z-index: 2;
+            left: 4rem;
+            bottom: 4rem;
+        }
+
+        &.slide-item-2 {
+            // clip-path: polygon(85% 0, 100% 0, 100% 100%, 70% 100%);
+            animation: sliding 8s infinite;
+
+            .meta {
+                right: 4em;
+                bottom: 4rem;
+                left: unset;
+                transition: all ease 500ms;
+                transition-delay: 150ms;
+            }
+        }
+        
+        h3 {
+            color: white;
+        }
+    }
+}

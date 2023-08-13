@@ -278,8 +278,8 @@ main {
   height: auto;
 }
 main article {
-  width: calc(100% - 8em);
-  margin: 0 4em;
+  width: 100%;
+  margin: 0 0;
 }
 @media (max-width: 1024px) {
   main article {

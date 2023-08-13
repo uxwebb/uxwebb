@@ -48,14 +48,16 @@ function register_acf_blocks() {
       __DIR__ . '/acf-blocks/relationship',
       array (
         'supports' => array(
-          'align' => array( 
-            'left',
-            'right',
-            'center',
-            'wide',
-            'full'
-          ),
+          'align' => true
         ),
-      )
+      ),
+    );
+    register_block_type( 
+      __DIR__ . '/acf-blocks/hero',
+      array (
+        'supports' => array(
+          'align' => true
+        ),
+      ),
     );
 }
