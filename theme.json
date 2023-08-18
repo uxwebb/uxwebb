@@ -5,13 +5,9 @@
         "appearanceTools": true,
         "color": {
             "palette": [
-                { "slug": "ux-beige", "color": "#DAD7CD", "name": "Beige" },
-                { "slug": "ux-light-green", "color": "#A3B18A", "name": "Ljusblå" },
-                { "slug": "ux-green", "color": "#588157", "name": "Grön" },
-                { "slug": "ux-darkgreen", "color": "#3A5A40", "name": "Mörkgrön" },
-                { "slug": "ux-dark-gray", "color": "#434343", "name": "Mörkgrå" },
-                { "slug": "ux-primary", "color": "#988AB1", "name": "Primär" },
-                { "slug": "ux-secondary", "color": "#5A3A54", "name": "Sekundär" }
+                { "slug": "primary", "color": "#69A982", "name": "Primary" },
+                { "slug": "secondary", "color": "#A2F8C4", "name": "Secondary" },
+                { "slug": "tetriary", "color": "#D1F9E1", "name": "Tetriary" }
             ]
         },
         "typography": {

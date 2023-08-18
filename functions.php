@@ -1,11 +1,4 @@
 <?php
-// if ( !function_exists('uxwebb_theme_support') ) :
-//     function uxwebb_theme_support() {
-//         add_theme_support('wp-block-styles');
-//         add_editor_style('style.css');
-//     }
-// endif;
-// add_action( 'after_setup_theme', 'uxwebb_theme_support' );
 
 // Add styles to editor
 $path = home_url().parse_url( get_stylesheet_directory_uri(), PHP_URL_PATH );
@@ -34,30 +27,43 @@ function be_gutenberg_scripts() {
 }
 add_action( 'enqueue_block_editor_assets', 'be_gutenberg_scripts' );
 
-add_theme_support( 'align-wide' );
 
-add_theme_support( 'post-thumbnails' );
+/*============================================================================== */
+# Patterns
+
+register_block_pattern_category('uxwebb', array(
+  'label' => __('UXWebb', 'uxwebb')
+));
+
+/*============================================================================== */
+/*============================================================================== */
+
+
+// add_theme_support( 'align-wide' );
+
+// add_theme_support( 'post-thumbnails' );
 
 /*==============================================================================
 # Custom ACF Blocks
 ==============================================================================*/
-add_action( 'init', 'register_acf_blocks' );
+// add_action( 'init', 'register_acf_blocks' );
 
-function register_acf_blocks() {
-    register_block_type( 
-      __DIR__ . '/acf-blocks/relationship',
-      array (
-        'supports' => array(
-          'align' => true
-        ),
-      ),
-    );
-    register_block_type( 
-      __DIR__ . '/acf-blocks/hero',
-      array (
-        'supports' => array(
-          'align' => true
-        ),
-      ),
-    );
-}
+// function register_acf_blocks() {
+//     register_block_type( 
+//       __DIR__ . '/acf-blocks/relationship',
+//       array (
+//         'supports' => array(
+//           'align' => true
+//         ),
+//       ),
+//     );
+//     register_block_type( 
+//       __DIR__ . '/acf-blocks/hero',
+//       array (
+//         'supports' => array(
+//           'align' => true
+//         ),
+//       ),
+//     );
+// }
+
