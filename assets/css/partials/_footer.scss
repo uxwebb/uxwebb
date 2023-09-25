@@ -1,0 +1,15 @@
+footer {
+    position: fixed;
+    bottom: 0;
+
+    a {
+        text-decoration: none;
+        // font-size: 100px;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

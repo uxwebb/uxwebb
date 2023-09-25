@@ -1,0 +1,14 @@
+{
+    "name": "acf/relationship",
+    "title": "Relationsblock",
+    "description": "A custom block that displays posts",
+    "style": [ "file:./relationship.css" ],
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["poster", "relationship"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "relationship.php"
+    },
+    "align": true
+}

@@ -1,0 +1,57 @@
+/* SCSS HEX */
+$light-blue: #C0DAD6ff;
+$verdigris: #5EABA7ff;
+$myrtle-green: #3D797Cff;
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #C0DAD6ff, #5EABA7ff, #3D797Cff);
+$gradient-right: linear-gradient(90deg, #C0DAD6ff, #5EABA7ff, #3D797Cff);
+$gradient-bottom: linear-gradient(180deg, #C0DAD6ff, #5EABA7ff, #3D797Cff);
+$gradient-left: linear-gradient(270deg, #C0DAD6ff, #5EABA7ff, #3D797Cff);
+$gradient-top-right: linear-gradient(45deg, #C0DAD6ff, #5EABA7ff, #3D797Cff);
+$gradient-bottom-right: linear-gradient(135deg, #C0DAD6ff, #5EABA7ff, #3D797Cff);
+$gradient-top-left: linear-gradient(225deg, #C0DAD6ff, #5EABA7ff, #3D797Cff);
+$gradient-bottom-left: linear-gradient(315deg, #C0DAD6ff, #5EABA7ff, #3D797Cff);
+$gradient-radial: radial-gradient(#C0DAD6ff, #5EABA7ff, #3D797Cff);
+
+// * {box-shadow: 0 0 0 1px black;}
+
+#hero-wrapper {
+    position: fixed!important;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: calc(100% - 4em);
+    height: calc(100% - 4em);
+    margin: 2em;
+    // display: flex;
+    // justify-content: center;
+    // flex-wrap: wrap;
+
+
+    .vanta-canvas {
+        max-width: 100%;
+        border-radius: 0.5em;
+        opacity: 0.7;
+        // border: 1px solid rgba(0,0,0,0.15);
+        box-shadow: 15px 15px 100px rgba(0,0,0,0.8);
+    }
+
+    .reveal-wrapper {
+        // box-shadow: 0 0 0 1px white;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: calc(100% - 8em);
+        margin: 12em 4em;
+        height: auto;
+
+        h1, h4 {
+            color: #333;
+            width: 100%;
+            margin: 0;
+        }
+    }
+}

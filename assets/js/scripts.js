@@ -1,44 +1,94 @@
 console.log("scripts.js");
 
-// const colorThief = new ColorThief();
-// const img = document.querySelector(".wp-post-image");
-// const dots = document.querySelector(".dots");
+// VANTA
+//////////////////////////
+// VANTA.FOG({
+//   el: "#hero-wrapper",
+//   mouseControls: true,
+//   touchControls: true,
+//   gyroControls: false,
+//   minHeight: 200.0,
+//   minWidth: 200.0,
+//   highlightColor: 0x0,
+//   midtoneColor: 0xff4bda,
+//   lowlightColor: 0xa341ff,
+//   blurFactor: 0.65,
+//   speed: 0.6,
+//   zoom: 0.4,
+// });
 
-// const rgbToHex = (r, g, b) =>
-//   "#" +
-//   [r, g, b]
-//     .map((x) => {
-//       const hex = x.toString(16);
-//       return hex.length === 1 ? "0" + hex : hex;
-//     })
-//     .join("");
+VANTA.FOG({
+  el: "#hero-wrapper",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.0,
+  minWidth: 200.0,
+  highlightColor: 0x0,
+  midtoneColor: 0x1aebd2,
+  lowlightColor: 0x000000,
+  blurFactor: 0.43,
+  speed: 0.5,
+  zoom: 0.3,
+});
 
-// if (img.complete) {
-//   getDominantColor(img);
-// } else {
-//   img.addEventListener("load", function () {
-//     getDominantColor(img);
-//   });
-// }
+// SPLT
+//////////////////////////
+splt({
+  reveal: true,
+});
 
-// function getDominantColor(img) {
-//   const dominantRGB = colorThief.getColor(img);
-//   console.log(dominantRGB);
-//   console.log(rgbToHex(dominantRGB[0], dominantRGB[1], dominantRGB[2]));
-// }
+anime({
+  targets: ".reveal",
+  translateY: [0, 50],
+  direction: "reverse",
+  loop: 1,
+  delay: anime.stagger(200),
+  opacity: 0,
+  duration: 1500,
+  easing: "cubicBezier(.71,-0.77,.43,1.67)",
+});
 
-// function getDominantColor(img) {
-//   const dominantRGB = colorThief.getColor(img);
-//   applyColorBg(rgbToHex(dominantRGB[0], dominantRGB[1], dominantRGB[2]));
-// }
+anime({
+  targets: ".revealBG",
+  translateY: [0, -50],
+  direction: "reverse",
+  loop: 1,
+  delay: anime.stagger(0),
+  opacity: 0,
+  duration: 1500,
+  easing: "cubicBezier(.71,-0.77,.43,1.67)",
+});
 
-// function applyColorBg(hexcode) {
-//   const cover = document.querySelector(".wp-block-group");
-//   cover.className = "dot";
-//   cover.style.backgroundColor = hexcode;
-//   hex.textContent = hexcode;
-//   dots.appendChild(cover);
-//   dots.appendChild(hex);
+// AJAX
+jQuery(".post-link").on("click", function (e) {
+  e.preventDefault();
 
-//   console.log(hexcode);
-// }
+  var post_id = jQuery(this).data("id"),
+    projectTitle = jQuery(this).data("title"),
+    projectSlug = jQuery(this).data("slug"),
+    ajaxURL = "/wp-admin/admin-ajax.php";
+
+  jQuery.ajax({
+    type: "POST",
+    url: ajaxURL,
+    context: this,
+    data: { action: "load-content", post_id: post_id },
+    beforeSend: function () {
+      console.log("beforesend");
+    },
+    success: function (response) {
+      console.log("success");
+      console.log(response, "respons");
+      console.log(projectSlug);
+      console.log(projectTitle);
+      jQuery("#project-container").html(response);
+    },
+    error: function (xhr) {
+      console.log("error");
+    },
+    complete: function () {
+      console.log("complete");
+    },
+  });
+});

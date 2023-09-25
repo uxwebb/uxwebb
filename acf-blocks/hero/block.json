@@ -1,0 +1,14 @@
+{
+    "name": "acf/hero",
+    "title": "Hero",
+    "description": "A custom heroblock",
+    "style": [ "file:./hero.css" ],
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["poster", "hero", "jumbotron"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "hero.php"
+    },
+    "align": true
+}

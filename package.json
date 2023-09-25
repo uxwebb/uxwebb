@@ -4,7 +4,7 @@
   "description": "UX Web development",
   "main": "index.js",
   "scripts": {
-    "sync": "browser-sync start -p 'uxwebb.local' --files '**/*.php' 'dist/*.js' 'dist/*.css'",
+    "sync": "browser-sync start -p 'uxwebb.local' --files '**/*.php' 'assets/js/*.js' '**/*.css' 'acf-blocks'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
