@@ -5,53 +5,45 @@
         "appearanceTools": true,
         "color": {
             "palette": [
-                { "slug": "primary", "color": "#69A982", "name": "Primary" },
-                { "slug": "secondary", "color": "#A2F8C4", "name": "Secondary" },
-                { "slug": "tetriary", "color": "#D1F9E1", "name": "Tetriary" }
+                { "slug": "grass", "color": "#343B29", "name": "Gräs" },
+                { "slug": "red", "color": "#FE0000", "name": "Röd" },
+                { "slug": "darkred", "color": "#721422", "name": "Mörkröd" }
             ]
         },
         "typography": {
             "fontFamilies": [
                 {
-                    "fontFamily": "Space Grotesk",
-                    "slug": "space-grotesk",
-                    "name": "Space Grotesk",
+                    "fontFamily": "Overpass",
+                    "slug": "overpass",
+                    "name": "Overpass",
                     "fontFace": [
                         {
-                            "fontFamily": "Space Grotesk",
-                            "fontWeight": "300",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": ["file:./assets/fonts/space-grotesk/SpaceGrotesk-Light.ttf"]
-                        },
-                        {
-                            "fontFamily": "Space Grotesk",
-                            "fontWeight": "500",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": ["file:./assets/fonts/space-grotesk/SpaceGrotesk-Medium.ttf"]
-                        },
-                        {
-                            "fontFamily": "Space Grotesk",
-                            "fontWeight": "700",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": ["file:./assets/fonts/space-grotesk/SpaceGrotesk-Bold.ttf"]
-                        }
-
-                    ]
-                },
-                {
-                    "fontFamily": "Inter",
-                    "slug": "inter",
-                    "name": "Inter",
-                    "fontFace": [
-                        {
-                            "fontFamily": "Inter",
+                            "fontFamily": "Overpass",
                             "fontWeight": "400",
                             "fontStyle": "normal",
                             "fontStretch": "normal",
-                            "src": ["file:./assets/fonts/inter/inter-400.ttf"]
+                            "src": ["file:./assets/fonts/overpass/Overpass-Regular.ttf"]
+                        }
+                    ]
+                },
+                {
+                    "fontFamily": "Sansita",
+                    "slug": "sansita",
+                    "name": "sansita",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Sansita Bold",
+                            "fontWeight": "700",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/sansita/Sansita-Bold.ttf"]
+                        },
+                        {
+                            "fontFamily": "Sansita Extra Bold",
+                            "fontWeight": "800",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/sansita/Sansita-ExtraBold.ttf"]
                         }
                     ]
                 }
@@ -76,7 +68,7 @@
     },
     "styles": {
         "typography": {
-            "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+            "fontFamily": "var(--wp--preset--font-family--overpass)",
             "lineHeight": "1.75",
             "fontSize": "1rem",
             "fontWeight": "300"
@@ -84,48 +76,48 @@
         "elements": {
             "h1": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
-                    "lineHeight": "normal",
+                    "fontFamily": "var(--wp--preset--font-family--sansita)",
+                    "lineHeight": "1.5",
                     "fontSize": "var(--wp--custom--typography--font-size--heading-1)",
                     "fontWeight": "700"
                 }
             },
             "h2": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
-                    "lineHeight": "normal",
+                    "fontFamily": "var(--wp--preset--font-family--sansita)",
+                    "lineHeight": "1.5",
                     "fontSize": "var(--wp--custom--typography--font-size--heading-2)",
                     "fontWeight": "700"
                 }
             },
             "h3": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
-                    "lineHeight": "normal",
+                    "fontFamily": "var(--wp--preset--font-family--sansita)",
+                    "lineHeight": "1.5",
                     "fontSize": "var(--wp--custom--typography--font-size--heading-3)",
                     "fontWeight": "700"
                 }
             },
             "h4": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
-                    "lineHeight": "normal",
+                    "fontFamily": "var(--wp--preset--font-family--sansita)",
+                    "lineHeight": "1.5",
                     "fontSize": "var(--wp--custom--typography--font-size--heading-4)",
                     "fontWeight": "700"
                 }
             },
             "h5": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
-                    "lineHeight": "normal",
+                    "fontFamily": "var(--wp--preset--font-family--sansita)",
+                    "lineHeight": "1.5",
                     "fontSize": "var(--wp--custom--typography--font-size--heading-5)",
                     "fontWeight": "300"
                 }
             },
             "h6": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
-                    "lineHeight": "1.75",
+                    "fontFamily": "var(--wp--preset--font-family--sansita)",
+                    "lineHeight": "1.5",
                     "fontSize": "var(--wp--custom--typography--font-size--heading-6)",
                     "fontWeight": "300"
                 }

@@ -1,29 +1,160 @@
 .relationship-wrapper {
-  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  gap: 2em;
-  justify-content: center;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
 }
-.relationship-wrapper .post-link {
-  text-decoration: none;
+@media (max-width: 1024px) {
+  .relationship-wrapper {
+    overflow: unset;
+  }
+}
+.relationship-wrapper ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 1rem;
-  border-radius: 1rem;
-  transition: all ease 250ms;
-}
-.relationship-wrapper .post-link:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
-.relationship-wrapper .post-link svg {
-  width: 60px;
-  height: 60px;
-}
-.relationship-wrapper .post-link span {
+  justify-content: space-between;
   width: 100%;
-  text-align: center;
+  height: 100%;
+  position: relative;
+}
+.relationship-wrapper ul li {
+  width: 33.33%;
+  list-style: none;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .relationship-wrapper ul li {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 2.5em;
+  }
+}
+.relationship-wrapper ul li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.8;
+  z-index: 3;
+  opacity: 0;
+  transition: all ease 0.25s;
+}
+@media (max-width: 1024px) {
+  .relationship-wrapper ul li:before {
+    display: none;
+  }
+}
+.relationship-wrapper ul li img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+@media (max-width: 1024px) {
+  .relationship-wrapper ul li img {
+    position: relative;
+    height: auto;
+  }
+}
+.relationship-wrapper ul li .meta-wrapper {
+  position: absolute;
+  z-index: 4;
+  padding: 2.5em;
+}
+@media (max-width: 1024px) {
+  .relationship-wrapper ul li .meta-wrapper {
+    position: relative;
+    padding: 0 0.75em;
+  }
+}
+.relationship-wrapper ul li .meta-wrapper h4 {
+  transform: translateX(-0.5em);
+  opacity: 0;
+  transition: all ease 0.5s;
+  transition-delay: 0.05s;
+  color: var(--wp--preset--color--red);
+}
+@media (max-width: 1024px) {
+  .relationship-wrapper ul li .meta-wrapper h4 {
+    opacity: 1;
+    transform: unset;
+  }
+}
+.relationship-wrapper ul li .meta-wrapper p {
+  transform: translateX(-0.5em);
+  opacity: 0;
+  transition: all ease 0.5s;
+  transition-delay: 0.1s;
+  color: var(--wp--preset--color--white);
+}
+@media (max-width: 1024px) {
+  .relationship-wrapper ul li .meta-wrapper p {
+    opacity: 1;
+    transform: unset;
+    color: var(--wp--preset--color--black);
+  }
+}
+.relationship-wrapper ul li .meta-wrapper .wp-block-button {
+  margin-top: 1.5em;
+  transform: translateX(-0.5em);
+  opacity: 0;
+  transition: all ease 0.5s;
+  transition-delay: 0.2s;
+}
+@media (max-width: 1024px) {
+  .relationship-wrapper ul li .meta-wrapper .wp-block-button {
+    opacity: 1;
+    transform: unset;
+  }
+}
+.relationship-wrapper ul li .meta-wrapper .wp-block-button:hover {
+  opacity: 0.85 !important;
+}
+.relationship-wrapper ul li:hover .meta-wrapper h4 {
+  opacity: 1;
+  transform: translateX(0);
+}
+.relationship-wrapper ul li:hover .meta-wrapper p {
+  opacity: 1;
+  transform: translateX(0);
+}
+.relationship-wrapper ul li:hover .meta-wrapper .wp-block-button {
+  opacity: 1;
+  transform: translateX(0);
+}
+.relationship-wrapper ul li:hover:before {
+  opacity: 0.75;
+}
+.relationship-wrapper ul li:first-of-type .meta-wrapper {
+  bottom: 0;
+  left: 0;
+}
+.relationship-wrapper ul li:first-of-type .meta-wrapper h4 {
+  font-size: 42px;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 1100px) {
+  .relationship-wrapper ul li:first-of-type .meta-wrapper h4 {
+    text-shadow: none;
+  }
+}
+.relationship-wrapper ul li:first-of-type .meta-wrapper h4, .relationship-wrapper ul li:first-of-type .meta-wrapper p, .relationship-wrapper ul li:first-of-type .meta-wrapper .wp-block-button {
+  opacity: 1;
+  transform: unset;
+}
+.relationship-wrapper ul li:first-of-type:before {
+  background: linear-gradient(to bottom right, transparent 30%, black 100%);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=relationship.css.map */
