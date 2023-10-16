@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"editorstyles.css"}
+{"version":3,"sourceRoot":"","sources":["partials/_general.scss"],"names":[],"mappings":";AAAA;EACI;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;;AAEA;EACI;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;;AAMR;EACI;;;AAIR;EACI","file":"editorstyles.css"}
