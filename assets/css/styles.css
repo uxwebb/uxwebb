@@ -25,6 +25,10 @@
   font-weight: 300;
 }
 
+p {
+  font-family: "Overpass";
+}
+
 article p {
   margin-bottom: 1em;
 }
