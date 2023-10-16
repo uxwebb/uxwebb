@@ -11,7 +11,8 @@ function uxwebb_styles() {
     wp_enqueue_script('jquery');
     wp_enqueue_style('uxwebb_style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
     wp_enqueue_style('uxwebb_styles', get_template_directory_uri() . '/assets/css/styles.css' );
-    wp_enqueue_style('uxwebb_styles_fonts', 'https://fonts.googleapis.com/css2?family=Overpass&family=Sansita:wght@700;800&display=swap' );
+    wp_enqueue_style('uxwebb_styles_fonts_sansita', 'https://fonts.googleapis.com/css2?family=Sansita:wght@700;800&display=swap' );
+    wp_enqueue_style('uxwebb_styles_fonts_', 'https://fonts.googleapis.com/css2?family=Overpass&display=swap' );
 }
 add_action( 'wp_enqueue_scripts', 'uxwebb_styles' );
 
